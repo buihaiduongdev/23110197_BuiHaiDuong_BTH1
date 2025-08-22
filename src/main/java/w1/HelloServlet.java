@@ -18,6 +18,7 @@ public class HelloServlet extends HttpServlet {
 		resp.setContentType("text/html");
 		PrintWriter printWriter = resp.getWriter();
 		String name = "";
+
 		// Nhận cookie
 		Cookie[] cookies = req.getCookies();
 		if (cookies != null) {
@@ -27,5 +28,6 @@ public class HelloServlet extends HttpServlet {
 		        }
 		    }
 		}
+		printWriter.println("Xin chao " + name);
 	}
 }
