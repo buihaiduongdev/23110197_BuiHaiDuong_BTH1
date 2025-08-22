@@ -16,8 +16,6 @@ public class home extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		resp.setContentType("text/html;charset=UTF-8");
-
-
 		// Lấy writer để ghi ra response
 		PrintWriter out = resp.getWriter();
 
@@ -27,6 +25,4 @@ public class home extends HttpServlet {
 			out.close();
 		}
 	}
-
-
 }

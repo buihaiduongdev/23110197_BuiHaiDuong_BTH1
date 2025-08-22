@@ -29,6 +29,5 @@ public class HelloServlet extends HttpServlet {
 		    }
 		}
 		printWriter.println("Xin chao " + name);
-
 	}
 }
